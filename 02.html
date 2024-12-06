@@ -7,11 +7,19 @@
     */
 
     //ENTRADA
-    
+    const quantNotas = prompt(`Informe quantas notas o aluno obteve:`);
 
     //PROCESSAMENTO
-    
+    let soma = 0;
+    for (let notas = 1; notas <= quantNotas; notas++) {
+        const notasAtual = Number(prompt(`Informe a ${notas}ª nota:`).replace(",","."));
+        soma = soma + notasAtual; 
+    }
+    let media = soma / quantNotas;
 
     //SAÍDA
+    document.write(`A média das notas do aluno é ${media.toFixed(1).replace(".",",")}.`);
+
+    //Finalizado.
 
 </script>
