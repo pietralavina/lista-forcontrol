@@ -6,11 +6,27 @@
     */
 
     //ENTRADA
+    const numInicial = prompt(`Informe um número inicial:`);
+    const numFinal = prompt(`Informe um número final:`);
+    let pares = [];
+    let impares = [];
 
-    
     //PROCESSAMENTO
-
+    if (numInicial >= numFinal) {
+        document.write(`Valor inválido! O número inicial informado deve ser menor que o final.`);
+    } else {
+        for (let numero = numInicial; numero <= numFinal; numero++) {
+            if (numero % 2 == 0) {
+                pares.push(numero);
+            } else {
+                impares.push(numero);
+            }
+        }
+    }
     
     //SAÍDA
+    document.write(`Números pares: ${pares.join(", ")} <br> Números ímpares: ${impares.join(", ")}`);
 
+    //FINALIZADO.
+    
 </script>
