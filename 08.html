@@ -13,9 +13,15 @@
         const numeroAtual = Number(prompt(`Informe o ${numeros}° número:`));
         listaNumeros.push(numeroAtual);
     }
-    let calculo = 
-
+    let soma = 0;
+    for (let calculo = 0; calculo < listaNumeros.length; calculo++) {
+        soma += listaNumeros[calculo];
+    }
+    let media = soma / listaNumeros.length;
 
     //SAÍDA
+    document.write(`O resultado da soma dos números é ${soma}. <br> O resultado da média dos números é ${media}.`);
+
+    //REVISAR.
 
 </script>

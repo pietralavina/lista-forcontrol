@@ -8,11 +8,34 @@
     */
 
     //ENTRADA
-
+    const candUm = prompt(`Informe o nome do primeiro candidato:`);
+    const candDois = prompt(`Informe o nome do segundo candidato:`);
+    const candTres = prompt(`Informe o nome do terceiro candidato:`);
+    const votantes = prompt(`Informe a quantidade de alunos votantes:`);
+    let voto1 = 0;
+    let voto2 = 0;
+    let voto3 = 0;
 
     //PROCESSAMENTO
-
+    for (contador = 1; contador <= votantes; contador++) {
+        let voto = prompt(`Aluno ${contador}, digite 1 para votar em ${candUm}, 2 para votar em ${candDois} ou 3 para votar em ${candTres}.`);
+        if (voto == 1) {
+            voto1++;
+        } else if (voto == 2) {
+            voto2++;
+        } else if (voto == 3) {
+            voto3++;
+        } else {
+            document.write(`Valor Inválido! Digite 1, 2 ou 3 apenas.`);
+        }
+    }
+    let perctUm = (voto1 / votantes) * 100;
+    let percDois = (voto2 / votantes) * 100;
+    let percTres = (votos3 / votantes) * 100;
 
     //SAÍDA
+    (`O(a) candidato ${candUm} recebeu ${voto1} votos, ficando com ${percUm.toFixed(1)}%. <br> O(a) candidato ${candDois} recebeu ${voto2} votos, ficando com ${percDois.toFixed(1)}%. <br> O(a) candidato ${candTres} recebeu ${voto3} votos, ficando com ${percTres.toFixed(1)}%.`);
+
+    //REVISAR.
 
 </script>
