@@ -13,9 +13,10 @@
     for (let dias = 1; investimento <= 2000; dias++){
         investimento = investimento * 1.02;
     }
+    let diaUtil = dias + Math.floor(dias / 5) * 2;
 
     //SAÍDA
-    document.write(`Levará ${dias} dias para que Joãozinho consiga o total de R$ 2.000,00.`);
+    document.write(`Levará ${diaUtil} dias para que Joãozinho consiga o total de R$ 2.000,00.`);
 
     //REVISAR.
 
