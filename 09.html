@@ -12,7 +12,7 @@
     
     //PROCESSAMENTO
     for (let anos = 1; anos <= 10; anos++) {
-        populacao = populacao * 1.5; 
+        populacao = populacao * 1.015; 
             if (anos === 5) {
                 cincoAnos = populacao;
             } else if (anos === 10) {
@@ -21,8 +21,8 @@
     }
     
     //SAÍDA
-    document.write(`População prevista para um prazo de 5 anos: ${cincoAnos}. <br>
-    População prevista para um prazo de 10 anos: ${dezAnos}. `);
+    document.write(`População prevista para um prazo de 5 anos: ${cincoAnos.toFixed(0)}. <br>
+    População prevista para um prazo de 10 anos: ${dezAnos.toFixed(0)}.`);
 
     //REVISAR.
 
